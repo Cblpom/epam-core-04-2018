@@ -43,7 +43,7 @@ public class Task26Impl implements Task26 {
                     point = new Point(segment1.first().getX() + u * dir1.getX(), segment1.first().getY() + u * dir1.getY());
                 }
 
-                 if (point != null) {
+                if (point != null) {
                     double key = point.getX();
                     if (intersections.containsKey(key) == false) {
                         Set<I2DPoint> hashSet = new HashSet<>();
@@ -61,7 +61,6 @@ public class Task26Impl implements Task26 {
         }
         return intersections.firstEntry().getValue();
     }
-
 
 
 }
